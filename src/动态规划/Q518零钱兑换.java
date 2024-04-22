@@ -4,11 +4,7 @@ import java.util.Collections;
 
 public class Q518零钱兑换
 {
-    public static void main(String[] args) {
-        int[] coins = new int[3];
-        coins = new int[]{1, 2, 5};
-        change(5,coins);
-    }
+
     //这是一个完全背包问题
     public static int change(int amount, int[] coins)
     {

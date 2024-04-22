@@ -1,10 +1,11 @@
 package 回溯算法;
 
+import org.testng.annotations.Test;
+
 import java.util.LinkedList;
 import java.util.List;
 
 class Q17 {
-
     List<String> list = new LinkedList<>();
     StringBuilder sb = new StringBuilder();
     String[] leterMap =
@@ -41,4 +42,8 @@ class Q17 {
 
 
      }
+    @Test
+    public void  kk(){
+        letterCombinations("23");
+    }
 }

@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Q257 {
-    public static void main(String[] args) {
-      
-    }
      public List<String> binaryTreePaths(TreeNode root)
      {
          List<String> ans = new ArrayList<>();

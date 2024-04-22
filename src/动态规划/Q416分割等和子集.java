@@ -7,8 +7,6 @@ import java.util.Arrays;
 class Q416 {
 
     public  static boolean canPartition(int[] nums) {
-
-
         int sum = 0;
 
       for(int i  : nums)
@@ -25,6 +23,7 @@ class Q416 {
         for(int i = 0; i < nums.length; i++)
             for(int j = sum; j >= nums[i]; j--)
             {
+                //这个用来覆盖上一层的结果
                 dp[j] = Math.max(dp[j],dp[j-nums[i]] + nums[i]);
                 if(dp[sum] == sum)
                     return true;

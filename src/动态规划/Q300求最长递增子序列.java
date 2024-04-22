@@ -5,6 +5,8 @@ import java.util.Collections;
 
 public class Q300求最长递增子序列 {
     public int lengthOfLIS(int[] nums) {
+
+        //i值大于j值，说明i值可以接到j后面
         int[]dp = new int[nums.length];
         Arrays.fill(dp,1);
         for(int i = 1;  i < nums.length; i++)
